@@ -7,11 +7,12 @@ import { defineConfig, globalIgnores } from 'eslint/config'
 export default defineConfig([
   globalIgnores(['dist']),
   {
-    files: ['**/*.{js,jsx}'],
+    files: ['**/*.{js,jsx,tsx}'],
     extends: [
       js.configs.recommended,
       reactHooks.configs['recommended-latest'],
       reactRefresh.configs.vite,
+      "plugin:prettier/recommended"
     ],
     languageOptions: {
       ecmaVersion: 2020,
@@ -22,6 +23,7 @@ export default defineConfig([
         sourceType: 'module',
       },
     },
+    plugins: ["react", "@typescript-eslint"],
     rules: {
       'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
     },
