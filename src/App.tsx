@@ -1,20 +1,20 @@
-import React from 'react'
-import Hero from './components/Hero'
-import About from './components/About'
-import Projects from './components/Projects'
-import Footer from './components/Footer'
-import Experience from './components/Experience'
+import React from "react";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Footer from "./components/Footer";
+import Experience from "./components/Experience";
 
 const App = () => {
-  return (
-    <div className="font-sans">
-      <Hero />
-      <About />
-      <Experience />
-      <Projects />
-      <Footer />
-    </div>
-  )
-}
+    return (
+        <div className="font-sans dark:bg-gray-900">
+            <Hero />
+            <About />
+            <Experience />
+            <Projects />
+            <Footer />
+        </div>
+    );
+};
 
-export default App
+export default App;

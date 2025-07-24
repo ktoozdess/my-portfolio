@@ -1,7 +1,9 @@
 const Hero = () => (
     <section className="min-h-screen flex flex-col justify-center items-center text-center px-4 relative">
-        <h1 className="text-5xl font-bold mb-4 text-gray-500">Hi, I'm Tagir 👋</h1>
-        <p className="text-xl mb-6 text-gray-700">Frontend Developer | React, Vite, TypeScript</p>
+        <h1 className="text-5xl font-bold mb-4 text-gray-500 dark:text-gray-200">
+            Hi, I'm Tagir 👋
+        </h1>
+        <p className="text-xl mb-6 text-gray-700 dark:text-gray-300">Frontend Developer</p>
 
         <div className="absolute bottom-8 flex flex-col items-center text-gray-400 animate-bounce">
             <span className="mb-2">Scroll</span>
